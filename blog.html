@@ -1,0 +1,194 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog & Faq's</title>
+<meta name="description" content="" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/" type="image/x-icon">
+<link rel="icon" href="images/" type="image/x-icon">
+<link rel="canonical" href="https://home-mcafee-activate.site/blog" />
+</head>
+
+<body>
+<div class="main">
+<header>
+<nav id="MCmenu">
+<div class="logo"><a href="index.html"><img src="images/" alt=""> </a></div>
+<div id="head-mobile"></div>
+<div class="button"></div>
+<ul>
+<li class="active"><a href="index.html">Home</a></li>
+</ul>
+<ul>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="banner">
+<div class="innnerpage">
+<div class="MC_wrapper">
+
+<aside id="text-8"><div class="textwidget"> <span>Welcome to Blog & Faq's Page</span>
+<div class="calltode"><div class="MC-number"></div><div class="MC-callnow"><a href=""></a></div></div>
+<p></p>
+
+
+</div>
+</aside>
+</div> </div>
+</section>
+
+<section>
+<div class="MC_wrapper MC-contant">
+
+
+<div class="MC-blog">
+<h1>Blog</h1>
+<div class="MCblog-left">
+<div class="MC-item">
+<div class="MC-item_grid">
+<h4>Secure Online Transaction and Payment With Mcafee?</h4>
+<p>As lost password is one of the most common problems the MCail users face, it is very important to take necessary measures in time. By this, we mean that you need to make sure never...</p>
+<a class="read" href="https://home-mcafee-activate.site/blog/secure-online-transaction-and-payment-with-mcafee/">Read More</a>
+</div>
+</div>
+
+</div>
+<div class="MCblog-right">
+<div class="MC-services-list-full">
+<h2>Keywords</h2>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<div class="MC_wrapper">
+
+<aside id="MC-text-11">
+<h4 class="MC-widget-title"><span>Disclaimer</span></h4>
+<div class="MC-textwidget">
+<p>“We are third-party technical support provider and not association with the Mcafee.com. Our mission is to fix the issues faced by the Mcafee users. We are not using brand banner or logo on this website to mislead the customers.”</p>
+</div>
+</aside>
+
+<aside id="MC-text-12">
+<h4 class="MC-widget-title"><span>Our Menu</span></h4>
+<div class="MC-footer-list">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href=""></a></li>
+<li><a href=""></a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+</aside>
+
+<aside id="MC-text-12">
+<h4 class="MC-widget-title"><span>Social Media</span></h4>
+<ul class="MC_social_link">
+<li> <a class="face" href="#" target="_blank" rel="nofollow"><img src="images/f.png" alt="Facebook Icon"></a></li>
+<li> <a href="#" target="_blank" rel="nofollow"><img src="images/in.png" alt="Linkedin Icon"></a> </li>
+<li> <a href="#" target="_blank" rel="nofollow"><img src="images/p.png" alt="Pinterest Icon"></a> </li>
+<li> <a href="#" target="_blank"><img src="images/b.png" alt="Blogspot Icon"></a> </li>
+<li> <a href="#" target="_blank"><img src="images/w.png" alt="Wordpress Icon"></a> </li>
+<li> <a class="youtube" href="#" target="_blank" rel="nofollow"><img src="images/y.png" alt="Youtube Icon"></a></li>
+</ul>
+</aside>
+
+<aside id="MC-text-11">
+<h4 class="MC-widget-title"><span>Contact Us</span></h4>
+<div class="MC-textwidget">
+<p>
+</p>
+</div>
+</aside>
+
+</div>
+
+</footer>
+
+
+
+
+</div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/my.js"></script>
+ <script>
+
+(function($) {
+$.fn.menumaker = function(options) {  
+ var cssmenu = $(this), settings = $.extend({
+   format: "dropdown",
+   sticky: false
+ }, options);
+ return this.each(function() {
+   $(this).find(".button").on('click', function(){
+     $(this).toggleClass('menu-opened');
+     var mainmenu = $(this).next('ul');
+     if (mainmenu.hasClass('open')) { 
+       mainmenu.slideToggle().removeClass('open');
+     }
+     else {
+       mainmenu.slideToggle().addClass('open');
+       if (settings.format === "dropdown") {
+         mainmenu.find('ul').show();
+       }
+     }
+   });
+   cssmenu.find('li ul').parent().addClass('has-sub');
+multiTg = function() {
+     cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+     cssmenu.find('.submenu-button').on('click', function() {
+       $(this).toggleClass('submenu-opened');
+       if ($(this).siblings('ul').hasClass('open')) {
+         $(this).siblings('ul').removeClass('open').slideToggle();
+       }
+       else {
+         $(this).siblings('ul').addClass('open').slideToggle();
+       }
+     });
+   };
+   if (settings.format === 'multitoggle') multiTg();
+   else cssmenu.addClass('dropdown');
+   if (settings.sticky === true) cssmenu.css('position', 'fixed');
+resizeFix = function() {
+  var mediasize = 767;
+     if ($( window ).width() > mediasize) {
+       cssmenu.find('ul').show();
+     }
+     if ($(window).width() <= mediasize) {
+       cssmenu.find('ul').hide().removeClass('open');
+     }
+   };
+   resizeFix();
+   return $(window).on('resize', resizeFix);
+ });
+  };
+})(jQuery);
+
+(function($){
+$(document).ready(function(){
+$("#MCmenu").menumaker({
+   format: "multitoggle"
+});
+});
+})(jQuery);
+
+
+</script>
+</body>
+</html>
