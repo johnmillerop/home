@@ -146,6 +146,8 @@ footer{background: #c01818; padding: 35px 0 25px 0; float:left; width:100%;}
 footer p{color: #fff;  font-size: 13px; text-align:justify;}
 #MC-text-11{width:30%; float:left; padding:10px;}
 #MC-text-12{width:20%; float:left; padding:10px;}
+#MC-text-13{width:25%; float:left; padding:10px;}
+#MC-text-14{width:22%; float:left; padding:10px;}
 footer .MC-widget-title { margin: 5px 0 10px 0;}
 
 footer a{color:#fff;}
@@ -353,7 +355,12 @@ section h3 {font-size: 18px; margin-bottom: 10px;}
 .MC-number strong { font-size: 33px;}
 .MC-number strong{display:block;}
 #MC-text-11 { width: 100%;}
+
 #MC-text-12 { width: 100%;}
+
+#MC-text-13 { width: 100%;}
+
+#MC-text-14 { width: 100%;}
 	.widget3 {
     background: #ffffff;
     margin: 0px 0px;
@@ -399,6 +406,8 @@ section h3 {font-size: 18px; margin-bottom: 10px;}
 .MC-number strong { font-size: 33px;}
 #MC-text-11 { width: 100%;}
 #MC-text-12 { width: 100%;}
+#MC-text-13 { width: 100%;}
+#MC-text-14 { width: 100%;}
 .MC-services-list-left {width: 100%;
 }
 
