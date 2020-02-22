@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 | Mcafee.com/Activate</title>
+<meta name="description" content="">
+<meta name="keywords" content=""/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/" type="">
+<link rel="icon" href="images/" type="image/x-icon">
+<link rel="canonical" href="https://home-mcafee-activate.site/404" />
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+<nav id="MCmenu">
+<div class="logo"><a href="index.html"><img src="images/" alt=""> </a></div>
+<div id="head-mobile"></div>
+<div class="button"></div>
+<ul>
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="banner">
+<div class="innnerpage">
+<div class="MC_wrapper">
+
+
+
+</div>
+</div> </div>
+</section>
+
+<section>
+<div class="MC_wrapper MC-contant">
+<div class="MC-blog">
+<div class="MCblog-left">
+<div class="widget3">
+<h1>404 Not Found</h1>
+
+<p><a href="https://home-mcafee-activate.site">Go Home</p>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<footer>
+<div class="MC_wrapper">
+
+<aside id="MC-text-11">
+<h4 class="MC-widget-title"><span>Disclaimer</span></h4>
+<div class="MC-textwidget">
+<p>“We are third-party technical support provider and not association with the Mcafee.com. Our mission is to fix the issues faced by the Mcafee users. We are not using brand banner or logo on this website to mislead the customers.”</p>
+</div>
+</aside>
+<div>
+<aside id="MC-text-12">
+<h4 class="MC-widget-title"><span>Our Menu</span></h4>
+<div class="MC-footer-list">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+</aside>
+</div>
+<div>
+<aside id="MC-text-13">
+<h4 class="MC-widget-title"><span>Social Media</span></h4>
+<ul class="MC_social_link">
+<li> <a class="face" href="https://twitter.com/mcafeeact" target="_blank" rel="nofollow"><img src="images/t.png" alt="twitter"></a></li>
+<li> <a href="https://www.linkedin.com/in/antivirusactivate/" target="_blank" rel="nofollow"><img src="images/in.png" alt="Linkedin"></a> </li>
+<li> <a href="https://www.pinterest.com/mcantivirusactivate/" target="_blank" rel="nofollow"><img src="images/p.png" alt="Pinterest"></a> </li>
+<li> <a href="https://mcantivirusactivate.blogspot.com/" target="_blank"><img src="images/b.png" alt="Blogspot"></a> </li>
+<li> <a href="http://mcantivirus.wordpress.com/" target="_blank"><img src="images/w.png" alt="Wordpress"></a> </li>
+</ul>
+</aside>
+</div>
+<div>
+<aside id="MC-text-14">
+<h4 class="MC-widget-title"><span>Contact Us</span></h4>
+<div class="MC-textwidget">
+<p>
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+</footer>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/my.js"></script>
+ <script>
+
+(function($) {
+$.fn.menumaker = function(options) {  
+ var cssmenu = $(this), settings = $.extend({
+   format: "dropdown",
+   sticky: false
+ }, options);
+ return this.each(function() {
+   $(this).find(".button").on('click', function(){
+     $(this).toggleClass('menu-opened');
+     var mainmenu = $(this).next('ul');
+     if (mainmenu.hasClass('open')) { 
+       mainmenu.slideToggle().removeClass('open');
+     }
+     else {
+       mainmenu.slideToggle().addClass('open');
+       if (settings.format === "dropdown") {
+         mainmenu.find('ul').show();
+       }
+     }
+   });
+   cssmenu.find('li ul').parent().addClass('has-sub');
+multiTg = function() {
+     cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+     cssmenu.find('.submenu-button').on('click', function() {
+       $(this).toggleClass('submenu-opened');
+       if ($(this).siblings('ul').hasClass('open')) {
+         $(this).siblings('ul').removeClass('open').slideToggle();
+       }
+       else {
+         $(this).siblings('ul').addClass('open').slideToggle();
+       }
+     });
+   };
+   if (settings.format === 'multitoggle') multiTg();
+   else cssmenu.addClass('dropdown');
+   if (settings.sticky === true) cssmenu.css('position', 'fixed');
+resizeFix = function() {
+  var mediasize = 767;
+     if ($( window ).width() > mediasize) {
+       cssmenu.find('ul').show();
+     }
+     if ($(window).width() <= mediasize) {
+       cssmenu.find('ul').hide().removeClass('open');
+     }
+   };
+   resizeFix();
+   return $(window).on('resize', resizeFix);
+ });
+  };
+})(jQuery);
+
+(function($){
+$(document).ready(function(){
+$("#MCmenu").menumaker({
+   format: "multitoggle"
+});
+});
+})(jQuery);
+
+
+</script>
+
+</body>
+</html>
