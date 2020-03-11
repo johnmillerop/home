@@ -24,8 +24,8 @@ nav{position:relative;margin:2px 60px 0px auto; width:1200px;}
 #MCmenu #head-mobile{display:none}
 #MCmenu{font-family:sans-serif;/*background:#333*/}
 #MCmenu > ul > li{float:left}
-#MCmenu > ul > li > a{padding:17px;font-size:15px;letter-spacing:1px;text-decoration:none;color:#000000;font-weight:700; margin-left:0;}
-#MCmenu > ul > li:hover > a,#MCmenu ul li.active a{color:#000}
+#MCmenu > ul > li > a{padding:17px;font-size:15px;letter-spacing:1px;text-decoration:none;color:#e20f0f;font-weight:700; margin-left:0;}
+#MCmenu > ul > li:hover > a,#MCmenu ul li.active a{color:#e20f0f}
 #MCmenu > ul > li:hover,#MCmenu ul li.active:hover,#MCmenu ul li.active,#MCmenu ul li.has-sub.active:hover{/*background:#448D00!important;*/-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease;}
 #MCmenu > ul > li.has-sub > a{padding-right:30px}
 #MCmenu > ul > li.has-sub > a:after{position:absolute;top:22px;right:11px;width:8px;height:2px;display:block;background:#1b70d7;content:''}
@@ -54,7 +54,7 @@ nav{width:100%;}
 #MCmenu { margin:0px 0;}
 #MCmenu{width:100%;/* background:#00759e;*/}
 #MCmenu ul{width:100%;display:none; margin:0 0;}
-#MCmenu ul li{width:100%;border-top:1px solid #444;  background:#000;}
+#MCmenu ul li{width:100%;border-top:1px solid #444;  background:#e20f0f;}
 #MCmenu ul li:hover{background:#363636;}
 #MCmenu ul ul li,#MCmenu li:hover > ul > li{height:auto}
 #MCmenu ul li a,#MCmenu ul ul li a{width:100%;border-bottom:0}
@@ -69,7 +69,7 @@ nav{width:100%;}
 #MCmenu > ul > li.has-sub > a:after,#MCmenu > ul > li.has-sub > a:before,#MCmenu ul ul > li.has-sub > a:after,#MCmenu ul ul > li.has-sub > a:before{display:none}
 #MCmenu #head-mobile{display:block;padding:23px;color:#ddd;font-size:12px;font-weight:700}
 .button{width:55px;height:46px;position:absolute;right:0;top:-9px;cursor:pointer;z-index: 12399994;}
-.button::after {position: absolute; top: 20px;right: 20px; display: block;height: 3px;width: 20px; border-top: 2px solid #000; border-bottom: 2px solid #000;
+.button::after {position: absolute; top: 20px;right: 20px; display: block;height: 3px;width: 20px; border-top: 2px solid #e20f0f; border-bottom: 2px solid #000;
     content: '';
 }
 .button:before{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;position:absolute;top:15px;right:20px;display:block;height:2px;width:20px;background:#000;content:''}
@@ -115,7 +115,7 @@ nav{width:100%;}
 .MC-smartcall {max-width: 780px; text-align: left; margin: 0 auto; }
 .calltode{background:#fff; padding:0px; margin:20px 0;width:680px; display: inline-block; border-radius:4px;}
 .MC-number{font-size:28px; color:#000!important; float:left; padding:5px 20px;}
-.MC-number strong{font-size:35px; color:#0070C9!important;}
+.MC-number strong{font-size:35px; color:#e20f0f!important;}
 .MC-callnow{ background: #c01818; float:right; padding:12px 20px;}
 .MC-callnow a{font-size:25px; color:#fff;}
 .MC-callnow:hover{font-size:25px; color:#fff; background: #ea3333;}
@@ -133,13 +133,13 @@ nav{width:100%;}
 .MC_title h3{padding:0 0 20px;}
 .MC_description{text-align: center;  margin: 10px 5px; line-height: 30px;}
 .MC-contant{/*padding:20px;*/}
-section h1 { color: #333; font-weight:normal;  font-size: 28px; margin-bottom: 10px;}
+section h1 { color: #e20f0f; font-weight:normal;  font-size: 28px; margin-bottom: 10px;}
 
 .MC-contant h1{padding:20px 15px 0px;}
 
 
-section h2{color: #0070C9; padding-bottom: 10px; font-weight: normal; padding: 0 15px 6px 15px; font-size: 22px;}
-section h3{color: #0070C9; padding-bottom: 10px; font-weight: normal; padding: 0 15px 6px 15px; font-size: 22px;}
+section h2{color: #e20f0f; padding-bottom: 10px; font-weight: normal; padding: 0 15px 6px 15px; font-size: 22px;}
+section h3{color: #e20f0f; padding-bottom: 10px; font-weight: normal; padding: 0 15px 6px 15px; font-size: 22px;}
 section p {text-align: justify; margin-bottom: 12px;     padding: 0 15px;}
 .bg_primary { background: #f15d58;}
 footer{background: #c01818; padding: 35px 0 25px 0; float:left; width:100%;}
@@ -258,7 +258,7 @@ footer .MC-widget-title {
 .MC-item_grid p{ padding:0px 0px;}
 .MC-item_grid h4{margin-bottom:15px; border-bottom:2px dotted #545454; padding-bottom:10px;}
 .read{padding:5px 10px; background:#fff; border:1px solid #ccc;}
-.read:hover{padding:5px 10px; background-color: #0070C9; color:#fff;}	
+.read:hover{padding:5px 10px; background-color: #e20f0f; color:#fff;}	
 	
 	.input-form {
     border: 1px solid #ccc;
